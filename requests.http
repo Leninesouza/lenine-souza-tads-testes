@@ -1,0 +1,17 @@
+### 201
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{ "name": "Carlos", "email": "carlos@exemplo.com" }
+
+### 409
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{ "name": "Carlos", "email": "carlos@exemplo.com" }
+
+### 400
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{ "name": "", "email": "x@y.com" }
